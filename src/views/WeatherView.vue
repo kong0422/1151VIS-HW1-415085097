@@ -412,6 +412,7 @@ export default {
           ["acc", "累積雨量",pick(w=>w.Now&&w.Now.Precipitation,v=>v>=0&&v<=1500,v=>v===-998?0:v)],  // -998 為微量，以 0 計
           ["sun", "日照時數",pick(w=>w.SunshineDuration,v=>v>=0&&v<=24)]
         ];
+        console.log(defs)
         for(const [k,label,list] of defs){
           if(list.length) this.setData(k,list,src); else errs.push(`${label}：回傳資料中沒有有效數值`);
         }
