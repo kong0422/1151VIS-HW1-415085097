@@ -1,0 +1,30 @@
+/* @import './base.css'; */
+body{margin:0;font-family:-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;background:#f3f5f8;color:#1c2430}
+.wrap{max-width:940px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:0 0 8px}
+.seg{display:inline-flex;border:1px solid #b9c2cf;border-radius:8px;overflow:hidden;margin-bottom:10px}
+.seg button{border:0;border-right:1px solid #b9c2cf;border-radius:0;padding:7px 18px;font-size:14px;background:#fff}
+.seg button:last-child{border-right:0}
+.seg button.on{background:#31D2F2;color:#fff}
+.status{font-size:13px;color:#566274;margin-bottom:8px;white-space:pre-line}
+.status.err{color:#b3261e}
+.ctl{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:13px;margin:8px 0}
+.ctl input[type=text]{padding:4px 8px;border:1px solid #b9c2cf;border-radius:6px;width:180px}
+button:disabled{opacity:.45;cursor:not-allowed}
+button{padding:4px 10px;border:1px solid #b9c2cf;border-radius:6px;background:#fff;cursor:pointer}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:12px}
+@media(max-width:700px){.row{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:12px;padding:10px}
+svg{width:100%;height:auto;display:block;background:#e9f1f8;border-radius:8px;cursor:grab}
+.county{fill:#d9dee6;stroke:#fff;stroke-width:.8;vector-effect:non-scaling-stroke}
+.county.on{stroke:#1c2430;stroke-width:2}
+.lbl{fill:#1c2430;text-anchor:middle;pointer-events:none;paint-order:stroke;stroke:#fff;stroke-opacity:.85}
+.tip{position:absolute;z-index:5;pointer-events:none;background:#1c2430;color:#fff;border-radius:8px;padding:8px 10px;font-size:12px;min-width:180px;box-shadow:0 4px 14px rgba(0,0,0,.28)}
+.tip .tn{font-weight:700;font-size:13px;margin-bottom:4px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.2)}
+.tip .tr{display:flex;justify-content:space-between;gap:14px;padding:2px 0}
+.tip .tr.cur b{color:#ffd54f}
+.name{font-weight:600;min-height:20px;margin-bottom:6px;font-size:14px}
+ol{list-style:none;margin:0;padding:0;max-height:520px;overflow:auto;font-size:13px}
+li{display:flex;justify-content:space-between;padding:4px 6px;border-radius:6px;cursor:pointer}
+li:hover,li.on{background:#eef1f5}
+.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;background:#d9dee6}

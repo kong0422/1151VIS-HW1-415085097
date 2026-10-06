@@ -1,0 +1,15 @@
+/* @import './base.css'; */
+
+html, body{
+  height: 100%;
+}
+
+#app {
+  /* margin-top: 60px; */
+  padding-bottom: 80px;
+}
+
+#app ul.navbar-nav li a.active {
+  background-color: #d1ecf1;
+
+}
