@@ -22,6 +22,8 @@
 以 **Vue 3.5 + D3.js + TopoJSON** 製作的台灣縣市氣象地圖，每個縣市依「轄內測站的平均值」直接填上顏色，可切換氣溫、紫外線、降雨機率。
 資料取自中央氣象署開放資料平台。
 
+[點我前往 DEMO](https://kong0422.github.io/1151VIS-HW1-415085097/ )
+
 ### 指標切換
 
 上方按鈕可切換地圖底色所代表的指標：
@@ -77,5 +79,6 @@
 | `O-A0003-001` 現在天氣觀測報告（每 10 分鐘更新） | 氣溫、累積雨量、日照時數、天氣現象、測站對照 | `AirTemperature`、`Now.Precipitation`、`SunshineDuration`、`Weather`、`StationId`、`StationName`、`GeoInfo.CountyName`、`ObsTime.DateTime`；`UVIndex`（即時讀數，作為紫外線的備援） |
 | `O-A0005-001` 紫外線指數－每日最大值 | 紫外線（主要來源） | `weatherElement.location[].StationID`、`UVIndex`；`weatherElement.Date` |
 | `F-C0032-001` 36 小時天氣預報 | 降雨機率、天氣現象（補觀測缺漏的縣市） | `PoP`（降雨機率）、`Wx`（天氣現象），取最近一個時段 |
+
 
 
