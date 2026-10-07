@@ -24,7 +24,7 @@ svg{width:100%;height:auto;display:block;background:#e9f1f8;border-radius:8px;cu
 .tip .tr{display:flex;justify-content:space-between;gap:14px;padding:2px 0}
 .tip .tr.cur b{color:#ffd54f}
 .name{font-weight:600;min-height:20px;margin-bottom:6px;font-size:14px}
-ol{list-style:none;margin:0;padding:0;max-height:520px;overflow:auto;font-size:13px}
+ol{list-style:none;margin:0;padding:0;overflow:auto;font-size:13px}
 li{display:flex;justify-content:space-between;padding:4px 6px;border-radius:6px;cursor:pointer}
 li:hover,li.on{background:#eef1f5}
 .dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;background:#d9dee6}
